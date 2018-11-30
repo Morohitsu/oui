@@ -10,6 +10,11 @@ app.use(bodyParser.json())
 
 // Add a bit of logging
 app.use(morgan('short'))
+app.get('/', function (req, res) {
+res.send ("helloworld")
+
+
+})
 
 // Get all the users defined
 /*app.get('/', function (req, res) {
